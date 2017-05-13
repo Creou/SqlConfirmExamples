@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SimpleExample_SingleColumnByName_SingleRowByFilter_TestAction.SqlScript" xml:space="preserve">
+    <value>/* Simple example.
+
+   In this unit test we are...
+      1) Selecting the single column "TestString" (Column Selector property)
+	  2) Applying a row filter "Id = 2" to select only the row where the Id column equals 2.
+	       (Row Filter property)
+	  3) Using the validator ["Value2"]. 
+		- The square braces indicate that this is a single row with a single column.
+	    - The quotes indicate that this is a string, and the data type handling is set 
+			to strict, so this test will only pass if the value matches exactly and is 
+			also a string.
+*/
+
+EXEC [dbo].[TestProc] @startId = 1, @endId = 2</value>
+  </data>
+  <data name="SimpleExample_SingleColumnByIndex_SingleRowByIndex_TestAction.SqlScript" xml:space="preserve">
+    <value>/* Simple example.
+
+   In this unit test we are...
+      1) Selecting the single column by index 2. (Column Selector property)
+	  2) Selecting only the first row by index (Row Selector property)
+	  3) Using the validator ["Value2"]. 
+		- The square braces indicate that this is a single row with a single column.
+	    - The quotes indicate that this is a string, and the data type handling is set 
+			to strict, so this test will only pass if the value matches exactly and is 
+			also a string.
+*/
+
+EXEC [dbo].[TestProc] @startId = 1, @endId = 2</value>
+  </data>
+  <data name="AdvancedExample_MultipleColumns_TestAction.SqlScript" xml:space="preserve">
+    <value>/* Advanced example - Validating multiple columns.
+
+   In this unit test we are...
+      1) Selecting the two columns "TestString" and "TestInteger" (Column Selector property)
+	  2) Applying a row filter "Id = 2" to select only the row where the Id column equals 2.
+	       (Row Filter property)
+	  3) Using the validator ["Value2",2]. 
+		- The square braces indicate that this is a single row with two columns.
+	    - The quotes indicate that the first value is a string.
+		- The second value is not quoted, so will be matched as an integer.
+		- The data type handling is set to strict, so this test will only pass if the values
+		    matches exactly, including the data types.
+*/
+
+EXEC [dbo].[TestProc] @startId = 1, @endId = 2</value>
+  </data>
+  <data name="AdvancedExample_MultipleColumns_MultipleRows_TestAction.SqlScript" xml:space="preserve">
+    <value>/* Advanced example - Mathcing multiple columns and multiple rows.
+
+   In this unit test we are...
+      1) Selecting the two columns "TestString" and "TestInteger" (Column Selector property)
+	  2) Applying a row filter "Id = 2 OR Id = 3" to select only the rows where the Id column
+	       equals 2 or 3. (Row Filter property)
+	  3) Using the validator ["Value2",2],["Value3",3]. 
+		- The square braces indicate that this is a single row with two columns.
+	    - The quotes indicate that the first value in each row is a string.
+		- The second value in each row is not quoted, so will be matched as an integer.
+		- The data type handling is set to strict, so this test will only pass if the values
+		    matches exactly, including the data types.
+		- Using square brackets in the validator to mark the rows means the test will only
+		    pass if the results (after column/row selection) contain exactly two rows and two
+			columns.
+*/
+
+EXEC [dbo].[TestProc] @startId = 1, @endId = 5</value>
+  </data>
+  <data name="AdvancedExample_RepeatedRows_TestAction.SqlScript" xml:space="preserve">
+    <value>/* Advanced example - Validating repeated row values.
+
+   In this unit test we are...
+      1) Selecting the two columns "TestString" and "TestInteger" (Column Selector property)
+	  2) Applying a row filter "Id &gt;= 10 AND Id &lt;=20" to select all rows with an Id between
+	       10 and 20. (Row Filter property)
+	  3) Using the validator ["Value10To20",1020]. 
+		- The square braces indicate that this is a single row with two columns.
+	    - The quotes indicate that the first value is a string.
+		- The second value is not quoted, so will be matched as an integer.
+		- The data type handling is set to strict, so this test will only pass if the values
+		    matches exactly, including the data types.
+		- The ResultRepeat property is set to "RowOnly". This allows the validator to match
+		    against any number of rows and confirm they all contain the same column values.
+
+	You can apply the same principle to repeated column 
+	values by changing the ResultRepeat to ColumnOnly.
+*/
+
+EXEC [dbo].[TestProc] @startId = 10, @endId = 20</value>
+  </data>
+  <data name="AdvancedExample_MatchingTheLastRow_TestAction.SqlScript" xml:space="preserve">
+    <value>/* Advanced example - Matching the last row.
+
+	To match the last row, sort the rows in reverse order, and select the rows by index 1.
+*/
+
+EXEC [dbo].[TestProc] @startId = 1, @endId = 5</value>
+  </data>
+  <data name="SimpleExample_TheFirstThreeRows_TestAction.SqlScript" xml:space="preserve">
+    <value>/* Simple example - Validting the first three rows.
+
+   In this unit test we are...
+      1) Selecting the single column by name "TestInteger". (Column Selector property)
+	  2) Selecting only the first three rows by index "1-3" (Row Selector property)
+	  3) Using the validator "1,2,3". 
+		- Because there are no square brackets in this example, this validator will
+		    actually validate either rows or columns. In this case we have only 
+			selected a single column in the column selector, so we will need three 
+			rows in order to pass the test.
+*/
+
+EXEC [dbo].[TestProc] @startId = 1, @endId = 10</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
