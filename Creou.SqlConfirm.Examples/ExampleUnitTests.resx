@@ -205,7 +205,7 @@ EXEC [dbo].[TestProc] @startId = 1, @endId = 5</value>
 	values by changing the ResultRepeat to ColumnOnly.
 */
 
-EXEC [dbo].[TestProc] @startId = 10, @endId = 20</value>
+EXEC [dbo].[TestProc] @startId = 3, @endId = 9</value>
   </data>
   <data name="AdvancedExample_MatchingTheLastRow_TestAction.SqlScript" xml:space="preserve">
     <value>/* Advanced example - Matching the last row.
@@ -213,7 +213,7 @@ EXEC [dbo].[TestProc] @startId = 10, @endId = 20</value>
 	To match the last row, sort the rows in reverse order, and select the rows by index 1.
 */
 
-EXEC [dbo].[TestProc] @startId = 1, @endId = 5</value>
+EXEC [dbo].[TestProc] @startId = 1, @endId = 4</value>
   </data>
   <data name="SimpleExample_TheFirstThreeRows_TestAction.SqlScript" xml:space="preserve">
     <value>/* Simple example - Validting the first three rows.

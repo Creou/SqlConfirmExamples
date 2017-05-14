@@ -307,10 +307,40 @@ namespace Creou.SqlConfirm.Examples
             sqlConfirmCondition5.Enabled = true;
             sqlConfirmCondition5.Name = "sqlConfirmCondition5";
             sqlConfirmCondition5.ResultRepeat = Creou.SqlConfirm.ResultRepeat.RowOnly;
-            sqlConfirmCondition5.RowFilter = "Id >= 10 AND Id <=20";
+            sqlConfirmCondition5.RowFilter = "Id >= 5 AND Id <=9";
             sqlConfirmCondition5.RowSelector = null;
             sqlConfirmCondition5.RowSort = null;
-            sqlConfirmCondition5.Validator = "[\"Value10To20\",1020]";
+            sqlConfirmCondition5.Validator = "[\"Value5To9\",529]";
+            // 
+            // AdvancedExample_MatchingTheLastRow_TestAction
+            // 
+            AdvancedExample_MatchingTheLastRow_TestAction.Conditions.Add(sqlConfirmCondition6);
+            resources.ApplyResources(AdvancedExample_MatchingTheLastRow_TestAction, "AdvancedExample_MatchingTheLastRow_TestAction");
+            // 
+            // sqlConfirmCondition6
+            // 
+            sqlConfirmCondition6.ColumnSelector = "TestInteger";
+            sqlConfirmCondition6.Enabled = true;
+            sqlConfirmCondition6.Name = "sqlConfirmCondition6";
+            sqlConfirmCondition6.RowFilter = null;
+            sqlConfirmCondition6.RowSelector = "1";
+            sqlConfirmCondition6.RowSort = "Id DESC";
+            sqlConfirmCondition6.Validator = "[4]";
+            // 
+            // SimpleExample_TheFirstThreeRows_TestAction
+            // 
+            SimpleExample_TheFirstThreeRows_TestAction.Conditions.Add(sqlConfirmCondition7);
+            resources.ApplyResources(SimpleExample_TheFirstThreeRows_TestAction, "SimpleExample_TheFirstThreeRows_TestAction");
+            // 
+            // sqlConfirmCondition7
+            // 
+            sqlConfirmCondition7.ColumnSelector = "TestInteger";
+            sqlConfirmCondition7.Enabled = true;
+            sqlConfirmCondition7.Name = "sqlConfirmCondition7";
+            sqlConfirmCondition7.RowFilter = null;
+            sqlConfirmCondition7.RowSelector = "1-3";
+            sqlConfirmCondition7.RowSort = null;
+            sqlConfirmCondition7.Validator = "1,2,3";
             // 
             // SimpleExample_SingleColumnByName_SingleRowByFilterData
             // 
@@ -348,41 +378,11 @@ namespace Creou.SqlConfirm.Examples
             this.AdvancedExample_MatchingTheLastRowData.PretestAction = null;
             this.AdvancedExample_MatchingTheLastRowData.TestAction = AdvancedExample_MatchingTheLastRow_TestAction;
             // 
-            // AdvancedExample_MatchingTheLastRow_TestAction
-            // 
-            AdvancedExample_MatchingTheLastRow_TestAction.Conditions.Add(sqlConfirmCondition6);
-            resources.ApplyResources(AdvancedExample_MatchingTheLastRow_TestAction, "AdvancedExample_MatchingTheLastRow_TestAction");
-            // 
-            // sqlConfirmCondition6
-            // 
-            sqlConfirmCondition6.ColumnSelector = "TestInteger";
-            sqlConfirmCondition6.Enabled = true;
-            sqlConfirmCondition6.Name = "sqlConfirmCondition6";
-            sqlConfirmCondition6.RowFilter = null;
-            sqlConfirmCondition6.RowSelector = "1";
-            sqlConfirmCondition6.RowSort = "Id DESC";
-            sqlConfirmCondition6.Validator = "[5]";
-            // 
             // SimpleExample_TheFirstThreeRowsData
             // 
             this.SimpleExample_TheFirstThreeRowsData.PosttestAction = null;
             this.SimpleExample_TheFirstThreeRowsData.PretestAction = null;
             this.SimpleExample_TheFirstThreeRowsData.TestAction = SimpleExample_TheFirstThreeRows_TestAction;
-            // 
-            // SimpleExample_TheFirstThreeRows_TestAction
-            // 
-            SimpleExample_TheFirstThreeRows_TestAction.Conditions.Add(sqlConfirmCondition7);
-            resources.ApplyResources(SimpleExample_TheFirstThreeRows_TestAction, "SimpleExample_TheFirstThreeRows_TestAction");
-            // 
-            // sqlConfirmCondition7
-            // 
-            sqlConfirmCondition7.ColumnSelector = "TestInteger";
-            sqlConfirmCondition7.Enabled = true;
-            sqlConfirmCondition7.Name = "sqlConfirmCondition7";
-            sqlConfirmCondition7.RowFilter = null;
-            sqlConfirmCondition7.RowSelector = "1-3";
-            sqlConfirmCondition7.RowSort = null;
-            sqlConfirmCondition7.Validator = "1,2,3";
         }
 
         #endregion
